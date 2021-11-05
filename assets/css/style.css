@@ -214,6 +214,10 @@ button{
 .show-menu{
     top: 0%;
 }
+/* ========== CHANGE BACKGROUND HEADER */
+.scroll-header{
+    background: var(--container-color);
+}
 
 /* ======== HOME ========= */
 
@@ -321,4 +325,45 @@ button{
 .swiper-pagination{
     position: initial;
     margin-top: var(--mb-1);
+}
+
+/* =========== CATEGORY ======= */
+.category__container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+}
+.category__data{
+    text-align: center;
+}
+
+.category__img{
+    width: 120px;
+    margin-bottom: var(--mb-0-75);
+    transition: 0.3s;
+}
+.category__title{
+    margin-bottom: var(--mb-0-25);
+}
+
+.category__data:hover .category__img{
+    transform: translateY(-.5rem);
+}
+
+/* =========== ABOUT ============ */
+.about__container{
+    row-gap: 2rem;
+}
+.about__data{
+    text-align: center;
+}
+.about__description{
+    margin-bottom: var(--mb-2);
+}
+.about__img{
+    width: 200px;
+    justify-self: center;
+    transition: .3s;
+}
+.category__data:hover .about__img{
+    transform: translateY(-1.5rem);
 }
